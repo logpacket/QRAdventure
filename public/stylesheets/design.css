@@ -1,0 +1,81 @@
+body {
+    background-color: #000044;
+    padding: 0;
+    margin: 0;
+}
+#title {
+    background-color: #3333cc;
+    color: white;
+    width: 100%;
+    height: 9em;
+    vertical-align: middle;
+    text-align: center;
+}
+#container-out {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+#container-in {
+    display: table-cell;
+    vertical-align: middle;
+    padding-bottom: 1.5em;
+}
+#teamlog {
+    font-size: 1.1em;
+}
+#name {
+    font-size: 2.3em;
+}
+#qusetion-box {
+    background: #ccccff;
+    width: 85%;
+    height: auto;
+    margin: 0 auto;
+    padding: 0 1em;
+    animation-duration: 2s;
+    animation-name: slidein;
+}
+@keyframes slidein {
+    from {
+        height: 0;
+    }
+    25% {
+        max-height: 0;
+        height: auto;
+    }
+    to {
+        max-height: 100em;
+    }
+}
+#opacity {
+    animation-duration: 2s;
+    animation-name: opacity;
+}
+@keyframes opacity {
+    from {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#way-num-out {
+    text-align: center;
+}
+#way-num {
+    font-size: 1.2em;
+}
+#problem {
+    font-size: 1.2em;
+}
+input {
+    width: 100%;
+    height: 2em;
+    font-size: 1.2em;
+    margin-bottom: 2em;
+    border: none;
+}

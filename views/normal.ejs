@@ -1,0 +1,36 @@
+<!doctype HTML>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/design.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+    <title>QR Adventure</title>
+</head>
+<body>
+    <div id="title">   <!-- 위에 있는 초록색 바탕의 타이틀 탭 (TeamLog's QR ADVENTURE) -->
+        <div id="container-out">
+            <div id="container-in">
+                <span id="teamlog">TeamLog's</span><br/>
+                <span id="name">QR ADVENTURE</span>
+            </div>
+        </div>
+    </div>
+    
+    <div id="qusetion-box"> <!-- 문제 내용이 나오는 탭 -->
+        <div id="opacity">
+            <div id="way-num-out">
+                <span id="way-num">
+                    <strong>일반: <%= pnumber%></strong>    <!-- 문제 종류와 그 번호 ( "[종류]: [숫자]번" ) -->
+                </span>
+            </div>
+            <p id="problem">    <!-- 실제 문제 내용 -->
+               <%= problem%>
+            </p>
+            <form action="/problem/normal" method="post">
+                <input  name="answer" type="text" value="" minlength="1" placeholder=" 이곳에 답을 적어주세요." />   <!-- 답을 쓰는 칸 -->
+            </form>
+        </div>
+    </div>
+</body>
+</html>

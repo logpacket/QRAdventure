@@ -1,0 +1,118 @@
+html {
+    height: 100%;
+}
+body {  
+    height: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #333333;
+    background-image: url('../images/redlogpanda.png');
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+}
+b {
+    color: #EB5B27;
+}
+
+.container-out {
+    display: table;
+    width: 100%;
+    height: 100%;
+}
+.container-in {
+    display: table-cell;
+    vertical-align: middle;
+}
+.bar {
+    width: 100%;
+    height: 10em;
+    text-align: center;
+    background-color: rgba( 78, 77, 77, 0.95 );
+}
+.border {
+    border-top: 1ex solid #E61C29;
+    border-bottom: 1ex solid #E61C29;
+}
+.big-font {
+    font-size: 2em;
+}
+#bar-animation {
+    animation-duration: 2s;
+    animation-name: bar-1;
+}
+@keyframes bar-1 {
+    from {
+        width: 0;
+        opacity: 0;
+    }
+    to {
+        width: 100%;
+        opacity: 1;
+    }
+}
+.p {
+    animation-duration: 2s;
+    animation-name: p;
+}
+@keyframes p {
+    from {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.pyro .before,
+.pyro .after {
+  width: 3px;
+  height: 3px;
+  position: absolute;
+  background: green;
+  border-radius: 50%;
+  box-shadow: 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff, 0 0 #fff;
+  animation: 1s bang ease-out infinite backwards, 1s gravity ease-in infinite backwards, 5s position linear infinite backwards;
+}
+
+.pyro .after {
+  animation-delay: 1.25s, 1.25s, 1.25s;
+  animation-duration: 1.25s, 1.25s, 6.25s;
+}
+
+@keyframes bang {
+  to {
+    box-shadow: -132px -132.66666667px #fbff00, -127px -319.66666667px #00ff09, 157px -37.66666667px #00ff4d, 173px -89.66666667px #00ff40, 99px -227.66666667px #00ddff, -144px 25.33333333px #6aff00, -93px -145.66666667px #cc00ff, 163px -113.66666667px #00ffaa, 99px -182.66666667px #b3ff00, -183px -377.66666667px #00ff11, 24px -8.66666667px #00ffb3, 241px -45.66666667px #ff6600, -93px 41.33333333px #ff5e00, -25px -120.66666667px #ff0088, 96px -67.66666667px #ff2600, -168px -322.66666667px #000dff, -61px -158.66666667px #ff0062, 40px -395.66666667px #f200ff, 181px -339.66666667px #ff4400, -113px -351.66666667px #3700ff, -79px 19.33333333px #00a6ff, -88px 24.33333333px #0004ff, -167px -200.66666667px #ff3700, 5px 11.33333333px #ff0095, -158px 58.33333333px #ff9500, -120px -325.66666667px #f7ff00, -141px -186.66666667px #ff1500, -62px -187.66666667px #00ff59, 90px 59.33333333px #ff4000, -220px -33.66666667px #d500ff, -164px -297.66666667px #0099ff, 174px -134.66666667px #fffb00, -245px 25.33333333px #ff5900, -198px -390.66666667px #ff0066, -210px -81.66666667px #ff7b00, -145px -179.66666667px #ff00e1, 171px -135.66666667px #00fffb, 230px 18.33333333px #dd00ff, -77px -133.66666667px #00ff62, -156px 40.33333333px #ff0080, -247px -334.66666667px #ddff00, -46px 79.33333333px #00f7ff, 182px -403.66666667px #77ff00, 108px -340.66666667px #ff003c, -5px -45.66666667px #7700ff, -46px 23.33333333px #00ff55, 79px 38.33333333px #ff6f00, -227px -206.66666667px #006aff, 80px -170.66666667px #001eff, -107px -237.66666667px #ff0051, -209px -133.66666667px #c800ff;
+  }
+}
+@keyframes gravity {
+  to {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+}
+@keyframes position {
+  0%, 19.9% {
+    margin-top: 10%;
+    margin-left: 40%;
+  }
+  20%, 39.9% {
+    margin-top: 40%;
+    margin-left: 30%;
+  }
+  40%, 59.9% {
+    margin-top: 20%;
+    margin-left: 70%;
+  }
+  60%, 79.9% {
+    margin-top: 30%;
+    margin-left: 20%;
+  }
+  80%, 99.9% {
+    margin-top: 30%;
+    margin-left: 80%;
+  }
+}

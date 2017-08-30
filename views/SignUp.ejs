@@ -1,0 +1,52 @@
+<!doctype HTML>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/stylesheets/SignUp.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.ico" />
+    <title>QR Adventure</title>
+</head>
+<body>
+    <div class="container-out">
+        <div class="container-in">
+            <div id="title" class="bar">
+                <div class="container-out">
+                    <div class="container-in">
+                        회원가입 <%= st%>
+                    </div>
+                </div>
+            </div>
+            <form action="/SignUp" method="post">
+            <div id="bar-1" class="bar">
+                <div class="container-out">
+                    <div class="container-in">
+                        <input type="text" placeholder=" 이름" name="name" minlength="2" maxlength="10"/>
+                    </div>
+                </div>
+            </div>
+            <div id="bar-2" class="bar">
+                <div class="container-out">
+                    <div class="container-in">
+                        <input type="number" placeholder=" 학번" name="number" minlength="5" maxlength="5"/>
+                    </div>
+                </div>
+            </div>
+            <div id="bar-3" class="bar">
+                <div class="container-out">
+                    <div class="container-in">
+                        <input type="password" placeholder=" 비밀번호" name="password" minlength="4" maxlength="20"/>
+                    </div>
+                </div>
+            </div>
+            <div id="bar-4" class="bar">
+                <div class="container-out">
+                    <div class="container-in">
+                        <input class="button" type="submit" value="확인"/>
+                    </div>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+</body>
