@@ -12,5 +12,9 @@
 ### Back-end stack
 > Node.js + Express + MongoDB
 
+> Programmer - logpacket
+
 ### Front-end stack
 > EJS Template + CSS + JS
+
+> Programmer - naruteride
